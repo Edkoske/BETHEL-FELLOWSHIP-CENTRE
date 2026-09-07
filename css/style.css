@@ -88,8 +88,16 @@ strong {
 
 /* --- Focus States --- */
 :focus-visible {
-  outline: 2px solid var(--primary-blue);
-  outline-offset: 2px;
+  outline: 3px solid rgba(23, 107, 103, 0.35);
+  outline-offset: 3px;
+}
+
+button:focus-visible,
+a:focus-visible,
+.gallery__item:focus-visible,
+.header__toggle:focus-visible {
+  outline: 3px solid rgba(23, 107, 103, 0.45);
+  outline-offset: 3px;
 }
 
 /* --- Container --- */
@@ -1516,8 +1524,13 @@ body {
   transition: transform 0.5s ease;
 }
 
-.gallery__item:hover img {
+.gallery__item:hover img,
+.gallery__item:focus-visible img {
   transform: scale(1.06);
+}
+
+.gallery__item:focus-visible {
+  box-shadow: 0 0 0 3px rgba(23, 107, 103, 0.25);
 }
 
 .gallery__item::after {
