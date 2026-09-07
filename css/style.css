@@ -2329,3 +2329,208 @@ a.contact-card:hover {
     transform: none;
   }
 }
+
+/* =============================================
+   FINAL PROFESSIONAL REFINEMENT
+   ============================================= */
+:root {
+  --shadow-sm: 0 1px 2px rgba(18, 33, 56, 0.05);
+  --shadow-md: 0 8px 24px rgba(18, 33, 56, 0.08);
+  --shadow-lg: 0 18px 48px rgba(18, 33, 56, 0.11);
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+}
+
+body {
+  color: #252a34;
+  background: #f7f8fa;
+}
+
+.header {
+  height: 64px;
+  border-bottom-color: #edf0f3;
+  box-shadow: 0 1px 12px rgba(18, 33, 56, 0.04);
+}
+
+.header__name {
+  font-weight: 800;
+}
+
+.nav-link {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.btn {
+  min-height: 44px;
+  padding: 13px 22px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn--sm {
+  min-height: 38px;
+  padding: 10px 18px;
+  font-size: 13px;
+}
+
+.hero {
+  padding-top: calc(var(--header-height) + 44px);
+  background: #f7f8fa;
+}
+
+.hero__title {
+  line-height: 1.02;
+}
+
+.hero__text {
+  color: #5f6875;
+}
+
+.hero__card {
+  border-color: #e9edf1;
+  box-shadow: var(--shadow-lg);
+}
+
+.hero__founder-note {
+  box-shadow: 0 8px 20px rgba(19, 86, 173, 0.15);
+}
+
+.stats-strip {
+  padding-bottom: 44px;
+}
+
+.stats-strip__grid {
+  box-shadow: 0 4px 16px rgba(18, 33, 56, 0.06);
+}
+
+.stats-strip__item {
+  min-height: 74px;
+  padding: 12px 18px;
+}
+
+.stats-strip__number {
+  font-weight: 800;
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.section__header {
+  margin-bottom: 40px;
+}
+
+.section__title {
+  color: #171a20;
+  line-height: 1.1;
+}
+
+.section__desc {
+  color: #6b7380;
+  font-size: 16px;
+}
+
+.vmv-card,
+.serve-card,
+.pillar-card,
+.governance-card,
+.support-card,
+.contact-card,
+.about__highlight,
+.bank-card,
+.gift-card,
+.contact__location,
+.contact__visit {
+  border-color: #e5e9ed;
+  box-shadow: var(--shadow-sm);
+}
+
+.vmv-card:hover,
+.serve-card:hover,
+.pillar-card:hover,
+.governance-card:hover,
+.support-card:hover,
+.contact-card:hover,
+.about__highlight:hover,
+.gift-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.about__content p,
+.timeline__content p,
+.pillar-card__text,
+.governance-card__text {
+  color: #626c78;
+}
+
+.impact {
+  background: var(--primary-blue);
+}
+
+.impact__quote {
+  border-radius: 14px;
+}
+
+.footer {
+  margin-top: 0;
+  padding: 56px 0;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero {
+    padding-top: calc(var(--header-height) + 28px);
+    padding-bottom: 28px;
+  }
+
+  .hero__title {
+    font-size: clamp(42px, 13vw, 58px);
+  }
+
+  .hero__actions .btn {
+    flex: 1 1 100%;
+  }
+
+  .hero__card {
+    padding: 14px;
+  }
+
+  .stats-strip {
+    padding-bottom: 28px;
+  }
+
+  .stats-strip__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-strip__item {
+    min-height: 68px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .section__header {
+    margin-bottom: 30px;
+  }
+
+  .about__highlight,
+  .vmv-card,
+  .serve-card,
+  .pillar-card,
+  .governance-card,
+  .support-card,
+  .contact-card,
+  .bank-card {
+    padding: 24px;
+  }
+}
