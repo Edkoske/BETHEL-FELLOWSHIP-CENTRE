@@ -4,19 +4,19 @@
 
 /* --- CSS Variables --- */
 :root {
-  --primary-blue: #176b67;
-  --primary-blue-dark: #0e504d;
-  --primary-blue-light: #e4f0ed;
-  --dark: #1d2a27;
-  --text: #26332f;
-  --muted: #687570;
-  --border: #dce5e1;
-  --background: #f7f8f4;
+  --primary-blue: #145f5a;
+  --primary-blue-dark: #0f4d49;
+  --primary-blue-light: #e9f3f2;
+  --dark: #162522;
+  --text: #243532;
+  --muted: #5f6e6a;
+  --border: #dfe9e5;
+  --background: #f6f7f3;
   --white: #FFFFFF;
-  --yellow: #e9a83b;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.1);
+  --yellow: #d9a74f;
+  --shadow-sm: 0 1px 2px rgba(22, 37, 34, 0.04);
+  --shadow-md: 0 10px 30px rgba(18, 33, 31, 0.08);
+  --shadow-lg: 0 16px 44px rgba(18, 33, 31, 0.12);
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 18px;
@@ -49,7 +49,9 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: var(--text);
-  background: var(--background);
+  background:
+    radial-gradient(circle at top, rgba(23, 107, 103, 0.05), transparent 28%),
+    var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -236,7 +238,7 @@ a:focus-visible,
 
 /* --- Section --- */
 .section {
-  padding: 80px 0;
+  padding: 88px 0;
 }
 
 .section__header {
@@ -246,19 +248,19 @@ a:focus-visible,
 
 .section__eyebrow {
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--primary-blue);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .section__title {
-  font-size: clamp(28px, 4vw, 42px);
+  font-size: clamp(30px, 3.6vw, 46px);
   font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
   color: var(--dark);
 }
 
@@ -267,7 +269,7 @@ a:focus-visible,
 }
 
 .section__desc {
-  margin-top: 16px;
+  margin-top: 18px;
   font-size: 17px;
   line-height: 1.7;
   color: var(--muted);
@@ -2078,7 +2080,7 @@ a.contact-card:hover {
 .gift-card,
 .contact__location,
 .contact__visit {
-  box-shadow: 0 10px 30px rgba(29, 42, 39, 0.05);
+  box-shadow: 0 10px 28px rgba(22, 37, 34, 0.05);
 }
 
 .vmv-card:hover,
