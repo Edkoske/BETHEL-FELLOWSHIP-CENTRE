@@ -1,0 +1,148 @@
+.maintenance-page {
+  min-height: 100vh;
+  background: var(--dark);
+}
+
+.maintenance {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(420px, 1.1fr);
+  background: var(--white);
+}
+
+.maintenance__image {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(10, 67, 139, 0.08), rgba(23, 25, 31, 0.58)),
+    url('../images/feeding.jpg') center / cover;
+}
+
+.maintenance__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 56px;
+  padding: clamp(32px, 7vw, 96px) clamp(24px, 8vw, 112px);
+}
+
+.maintenance__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  width: fit-content;
+  color: var(--dark);
+}
+
+.maintenance__brand:hover {
+  color: var(--primary-blue);
+}
+
+.maintenance__brand img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.maintenance__brand span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.maintenance__brand strong {
+  font-family: var(--font-display);
+  font-size: 18px;
+}
+
+.maintenance__brand small {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.maintenance__message {
+  max-width: 620px;
+}
+
+.maintenance__message .badge {
+  margin-bottom: 24px;
+}
+
+.maintenance__message h1 {
+  max-width: 600px;
+  color: var(--dark);
+  font-family: var(--font-display);
+  font-size: clamp(42px, 5vw, 76px);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.maintenance__message p {
+  max-width: 520px;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.maintenance__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.maintenance__contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 18px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.maintenance__contact-label {
+  flex-basis: 100%;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.maintenance__contact a {
+  color: var(--primary-blue);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+@media (max-width: 767px) {
+  .maintenance {
+    display: block;
+  }
+
+  .maintenance__image {
+    min-height: 32vh;
+    max-height: 360px;
+  }
+
+  .maintenance__content {
+    min-height: 68vh;
+    gap: 48px;
+    padding: 32px 24px 36px;
+  }
+
+  .maintenance__message h1 {
+    font-size: clamp(40px, 13vw, 60px);
+  }
+
+  .maintenance__message p {
+    font-size: 16px;
+  }
+
+  .maintenance__actions .btn {
+    width: 100%;
+  }
+}
